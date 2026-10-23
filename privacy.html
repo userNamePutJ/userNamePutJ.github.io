@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Personal Mail Assistant</title>
+<style>
+  body { font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         color: #222; background: #fff; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+  h1, h2 { line-height: 1.2; }
+  footer { margin-top: 3rem; font-size: .85rem; color: #777; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p>This policy describes how <strong>Personal Mail Assistant</strong> handles data when an
+account owner authorizes it to access their email.</p>
+
+<h2>Data accessed</h2>
+<p>The tool requests access to the authorizing account's email messages and labels
+(Gmail scope <code>https://www.googleapis.com/auth/gmail.modify</code>). It reads message
+content and metadata, and it can create, change and remove labels.</p>
+
+<h2>How data is used</h2>
+<ul>
+  <li>New incoming messages are fetched periodically.</li>
+  <li>Each message is classified on the operator's own machine to decide which labels apply
+      (for example "appointment needed" or "reply suggested").</li>
+  <li>For messages that warrant a reply, a draft reply is prepared. Drafts are never sent
+      automatically — the account owner reviews and sends every reply personally.</li>
+</ul>
+
+<h2>Storage and sharing</h2>
+<p>Classifications and a record of applied labels are stored locally on the operator's own
+machine. Message content is processed in memory and is not persisted anywhere else. No data is
+shared with third parties, sold, or used for advertising.</p>
+
+<h2>Deletion and reversibility</h2>
+<p>The tool never deletes email. Label changes are snapshotted before being applied and can be
+restored. Revoking access in the Google Account security settings stops all processing
+immediately.</p>
+
+<h2>Contact</h2>
+<p>For questions about this policy, use the user support email address shown on the tool's
+Google authorization screen.</p>
+
+<footer>Static informational page. No scripts, no tracking, no cookies.</footer>
+</body>
+</html>
